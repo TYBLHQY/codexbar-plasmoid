@@ -125,7 +125,7 @@ Rectangle {
             text: i18n("Open installation guide")
             icon.name: "documentation-symbolic"
             Accessible.name: text
-            onClicked: Qt.openUrlExternally("https://github.com/psimaker/codexbar-plasmoid#install-the-codexbar-cli")
+            onClicked: Qt.openUrlExternally("https://github.com/TYBLHQY/codexbar-plasmoid#install-the-codexbar-cli")
         }
 
         PlasmaComponents3.Button {

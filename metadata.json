@@ -3,10 +3,13 @@
     "KPlugin": {
         "Authors": [
             {
+                "Name": "TYBLHQY"
+            },
+            {
                 "Name": "psimaker"
             }
         ],
-        "BugReportUrl": "https://github.com/psimaker/codexbar-plasmoid/issues",
+        "BugReportUrl": "https://github.com/TYBLHQY/codexbar-plasmoid/issues",
         "Category": "System Information",
         "Description": "AI coding provider usage in your panel — a Plasma port of CodexBar",
         "Description[de]": "KI-Provider-Nutzungslimits im Panel — eine Plasma-Portierung von CodexBar",
@@ -14,8 +17,8 @@
         "Id": "com.github.psimaker.codexbar",
         "License": "MIT",
         "Name": "CodexBar",
-        "Version": "0.6.1",
-        "Website": "https://github.com/psimaker/codexbar-plasmoid"
+        "Version": "0.6.2",
+        "Website": "https://github.com/TYBLHQY/codexbar-plasmoid"
     },
     "X-Plasma-API-Minimum-Version": "6.0"
 }
