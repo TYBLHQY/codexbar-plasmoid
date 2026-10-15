@@ -11,8 +11,8 @@ sign-in, uploads, and publication must be performed by the maintainer.
 - Product title: **CodexBar for KDE Plasma 6**
 - Plugin ID: `com.github.psimaker.codexbar`
 - License: **MIT**
-- Source URL: <https://github.com/psimaker/codexbar-plasmoid>
-- Issues: <https://github.com/psimaker/codexbar-plasmoid/issues>
+- Source URL: <https://github.com/TYBLHQY/codexbar-plasmoid>
+- Issues: <https://github.com/TYBLHQY/codexbar-plasmoid/issues>
 - Minimum desktop version: **KDE Plasma 6.0**
 - External dependency: **CodexBar CLI 0.43.0 or newer** (the widget offers a
   user-local installer for it; the latest CLI release is recommended)
@@ -167,7 +167,7 @@ placeholders.
 ### Support and issue note
 
 > Report reproducible widget issues at
-> https://github.com/psimaker/codexbar-plasmoid/issues. For CodexBar CLI
+> https://github.com/TYBLHQY/codexbar-plasmoid/issues. For CodexBar CLI
 > behavior, first check the upstream CLI documentation and identify whether the
 > problem can be reproduced by running the CLI directly.
 

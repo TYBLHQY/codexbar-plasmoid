@@ -5,7 +5,7 @@
 # release and then the CodexBar CLI it depends on, both for the current user
 # only. No root required.
 #
-#   curl -fsSL https://raw.githubusercontent.com/psimaker/codexbar-plasmoid/main/scripts/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/TYBLHQY/codexbar-plasmoid/main/scripts/install.sh | sh
 #
 # Usage: install.sh [--widget-only | --cli-only] [--version vX.Y.Z]
 #   --widget-only   install only the Plasma widget
@@ -18,7 +18,7 @@
 #   CODEXBAR_PLASMOID_DIR         where kpackagetool6 installs applets
 set -eu
 
-repo="psimaker/codexbar-plasmoid"
+repo="TYBLHQY/codexbar-plasmoid"
 plugin_id="com.github.psimaker.codexbar"
 release_base="${CODEXBAR_WIDGET_RELEASE_BASE:-https://github.com/$repo/releases/download}"
 latest_url="${CODEXBAR_WIDGET_LATEST_URL:-https://github.com/$repo/releases/latest}"

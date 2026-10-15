@@ -12,9 +12,9 @@
 A faithful KDE Plasma port of [CodexBar](https://github.com/steipete/CodexBar), Peter Steinberger's macOS menu bar app.
 Codex, Claude, Cursor, Copilot, Gemini and 80+ more providers, driven by the official CodexBar CLI.
 
-[![Release](https://img.shields.io/github/v/release/psimaker/codexbar-plasmoid?style=flat-square&color=1d99f3)](https://github.com/psimaker/codexbar-plasmoid/releases/latest)
+[![Release](https://img.shields.io/github/v/release/TYBLHQY/codexbar-plasmoid?style=flat-square&color=1d99f3)](https://github.com/TYBLHQY/codexbar-plasmoid/releases/latest)
 [![KDE Store](https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fapi.kde-look.org%2Focs%2Fv1%2Fcontent%2Fdata%2F2377011&query=%2F%2Fcontent%2Fversion&label=KDE%20Store&style=flat-square&color=1d99f3&logo=kde&logoColor=white)](https://store.kde.org/p/2377011)
-[![CI](https://img.shields.io/github/actions/workflow/status/psimaker/codexbar-plasmoid/package-plasmoid.yml?branch=main&style=flat-square&label=CI)](https://github.com/psimaker/codexbar-plasmoid/actions/workflows/package-plasmoid.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/TYBLHQY/codexbar-plasmoid/package-plasmoid.yml?branch=main&style=flat-square&label=CI)](https://github.com/TYBLHQY/codexbar-plasmoid/actions/workflows/package-plasmoid.yml)
 [![KDE Plasma 6](https://img.shields.io/badge/KDE_Plasma-6-1d99f3?style=flat-square&logo=kde&logoColor=white)](https://kde.org/plasma-desktop/)
 [![CodexBar CLI](https://img.shields.io/badge/CodexBar_CLI-%E2%89%A5%200.43-49a3b0?style=flat-square)](https://github.com/steipete/CodexBar/blob/main/docs/cli.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-6e5aff?style=flat-square)](LICENSE)
@@ -26,7 +26,7 @@ Codex, Claude, Cursor, Copilot, Gemini and 80+ more providers, driven by the off
 ## ⚡ Install in one line
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/psimaker/codexbar-plasmoid/main/scripts/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/TYBLHQY/codexbar-plasmoid/main/scripts/install.sh | sh
 ```
 
 Then right-click your panel → **Add Widgets…** → search **CodexBar**. That's it.
@@ -42,7 +42,7 @@ Then right-click your panel → **Add Widgets…** → search **CodexBar**. That
 > [!TIP]
 > Already have the widget? It installs and updates the CLI by itself: the popup shows an **Install CodexBar CLI** button when the CLI is missing or too old, and **About CodexBar** offers **Update CodexBar CLI to the latest release**.
 
-Options: `--widget-only`, `--cli-only`, `--version v0.6.1`. The scripts are plain POSIX `sh`, so read them first if you like: [`scripts/install.sh`](scripts/install.sh) and [`contents/scripts/install-cli.sh`](contents/scripts/install-cli.sh). Manual and package-manager routes are [below](#other-ways-to-install).
+Options: `--widget-only`, `--cli-only`, `--version v0.6.2`. The scripts are plain POSIX `sh`, so read them first if you like: [`scripts/install.sh`](scripts/install.sh) and [`contents/scripts/install-cli.sh`](contents/scripts/install-cli.sh). Manual and package-manager routes are [below](#other-ways-to-install).
 
 ## ✨ Features
 
@@ -84,7 +84,7 @@ The widget and the CLI are separate: the CLI is not bundled inside the `.plasmoi
 <summary><b>Widget from a <code>.plasmoid</code> file</b></summary>
 <br>
 
-1. Download the current `.plasmoid` file from [GitHub Releases](https://github.com/psimaker/codexbar-plasmoid/releases).
+1. Download the current `.plasmoid` file from [GitHub Releases](https://github.com/TYBLHQY/codexbar-plasmoid/releases).
 2. Right-click the Plasma panel or desktop and select **Add Widgets…**.
 3. Select **Get New Widgets** → **Install Widget From Local File…** and pick the downloaded file.
 4. Search for **CodexBar** and add it to the panel.
@@ -130,7 +130,7 @@ The widget finds `codexbar` on `PATH` (including `~/.local/bin`). Alternatively 
 <br>
 
 ```bash
-git clone https://github.com/psimaker/codexbar-plasmoid.git
+git clone https://github.com/TYBLHQY/codexbar-plasmoid.git
 cd codexbar-plasmoid
 kpackagetool6 -t Plasma/Applet -i .     # later: -u . to update
 tests/run-tests.sh
