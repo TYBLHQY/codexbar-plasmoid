@@ -17,6 +17,10 @@ MouseArea {
     required property var plasmoidRoot
 
     readonly property bool vertical: Plasmoid.formFactor === PlasmaCore.Types.Vertical
+    // Meters sit side by side (2:1) on horizontal panels, where panel width is
+    // plentiful and a 17px square squeezes the two bars together. Vertical
+    // panels keep the stacked square meter.
+    readonly property bool metersSideBySide: !vertical
     readonly property bool separate: Plasmoid.configuration.separateIcons
     readonly property string configuredDisplayMode: Plasmoid.configuration.panelDisplayMode || ""
     readonly property string displayMode: configuredDisplayMode === "logos"
@@ -304,7 +308,9 @@ MouseArea {
                     visible: compactRoot.showsMetersFor(providerItem.providerId) || providerItem.providerId === "__merged__"
                     // merged icon: plain meter bars like the original CodexBar status item
                     providerId: providerItem.providerId === "__merged__" ? "" : providerItem.providerId
-                    Layout.preferredWidth: compactRoot.iconSide
+                    sideBySide: compactRoot.metersSideBySide
+                    Layout.preferredWidth: compactRoot.metersSideBySide
+                        ? compactRoot.iconSide * 3 : compactRoot.iconSide
                     Layout.preferredHeight: compactRoot.iconSide
                     Layout.alignment: Qt.AlignVCenter
                     remainingPrimary: compactRoot.remainingFor(providerItem.providerId, "session")
@@ -330,7 +336,7 @@ MouseArea {
                     spacing: 0
 
                     PlasmaComponents3.Label {
-                        font.pixelSize: Math.max(9, Math.round(compactRoot.iconSide * 0.62))
+                        font.pixelSize: Math.max(11, Math.round(compactRoot.iconSide * 0.85))
                         text: {
                             if (!percentBlock.pick)
                                 return "–"
